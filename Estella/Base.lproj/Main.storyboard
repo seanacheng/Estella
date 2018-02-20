@@ -40,7 +40,7 @@
                                         <rect key="frame" x="162.66666666666666" y="50.333333333333329" width="49" height="30"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
-                                            <segue destination="8rJ-Kc-sve" kind="show" id="X1x-7t-psO"/>
+                                            <action selector="goToDiary:" destination="9pv-A4-QxB" eventType="touchUpInside" id="5Fw-Yk-ebn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -118,14 +118,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-309" y="360"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="X1x-7t-psO"/>
-    </inferredMetricsTieBreakers>
 </document>

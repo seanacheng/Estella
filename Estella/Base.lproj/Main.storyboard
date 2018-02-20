@@ -19,33 +19,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-7d-8np">
-                                <rect key="frame" x="-0.66666666666665719" y="70" width="414.66666666666663" height="80.333333333333314"/>
+                                <rect key="frame" x="20" y="70" width="374" height="80.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Entry:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-6t-aYd">
-                                        <rect key="frame" x="167.33333333333331" y="0.0" width="80" height="20.333333333333332"/>
+                                        <rect key="frame" x="147" y="0.0" width="80" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xjs-En-yoh">
-                                        <rect key="frame" x="195" y="20.333333333333329" width="25" height="30"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333329" width="374" height="30"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" keyboardKey="YES"/>
+                                        </accessibility>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-ZM-q1y">
-                                        <rect key="frame" x="183" y="50.333333333333329" width="49" height="30"/>
+                                        <rect key="frame" x="162.66666666666666" y="50.333333333333329" width="49" height="30"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <segue destination="8rJ-Kc-sve" kind="show" id="X1x-7t-psO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xjs-En-yoh" firstAttribute="leading" secondItem="wA2-7d-8np" secondAttribute="leading" id="Nto-ou-dPS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xjs-En-yoh" secondAttribute="trailing" id="g5D-CU-iVB"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="wA2-7d-8np" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="bTk-pR-43Z"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="wA2-7d-8np" secondAttribute="trailing" id="ey9-qU-O2z"/>
-                            <constraint firstItem="wA2-7d-8np" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="50" id="w4E-Kd-M1s"/>
+                            <constraint firstItem="wA2-7d-8np" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="ThK-kF-580"/>
+                            <constraint firstItem="wA2-7d-8np" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="50" id="fgR-DG-aYq"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="wA2-7d-8np" secondAttribute="trailing" constant="20" id="yxZ-eh-6wg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -115,4 +125,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="X1x-7t-psO"/>
+    </inferredMetricsTieBreakers>
 </document>

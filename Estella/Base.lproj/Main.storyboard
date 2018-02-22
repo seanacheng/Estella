@@ -60,7 +60,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Entry" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="New Entry" image="new entry icon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,13 +74,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g85-4N-EXn">
-                                <rect key="frame" x="131" y="58" width="153" height="78"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="RVy-s6-ONi"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-yp-Lfq">
                                 <rect key="frame" x="183" y="607" width="48" height="30"/>
                                 <state key="normal" title="Logout">
@@ -94,15 +87,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="t6Q-yp-Lfq" firstAttribute="centerX" secondItem="g85-4N-EXn" secondAttribute="centerX" id="0Q7-mE-bvK"/>
-                            <constraint firstItem="g85-4N-EXn" firstAttribute="top" secondItem="T4z-zj-C6y" secondAttribute="top" constant="38" id="1Kw-cG-cWr"/>
                             <constraint firstItem="T4z-zj-C6y" firstAttribute="bottom" secondItem="t6Q-yp-Lfq" secondAttribute="bottom" constant="50" id="Io5-Z3-SGo"/>
-                            <constraint firstItem="g85-4N-EXn" firstAttribute="leading" secondItem="T4z-zj-C6y" secondAttribute="leading" constant="131" id="TcM-XT-YyO"/>
                             <constraint firstItem="t6Q-yp-Lfq" firstAttribute="centerX" secondItem="W0f-qd-uR8" secondAttribute="centerX" id="oM0-Wd-qNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="T4z-zj-C6y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="first" id="EZf-BL-Zlb"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile icon" largeContentSizeImage="third" id="EZf-BL-Zlb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Vi-j3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +110,7 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Diary" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Diary" image="diary icon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,7 +185,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="diary icon" width="21" height="21"/>
+        <image name="new entry icon" width="21" height="21"/>
+        <image name="profile icon" width="21" height="21"/>
+        <image name="third" width="85" height="85"/>
     </resources>
 </document>

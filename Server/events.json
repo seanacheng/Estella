@@ -1,0 +1,62 @@
+[
+{
+	"title": "Chinese New Year at Sentosa 2018",
+	"time": "2018/03/04 12:00:00",
+	"description": "Experience the holiday festivities at Sentosa this Lunar New Year. Be mesmerised by adrenaline-pumping lion and dragon dances, and check out the instant spend-and-win game kiosks.",
+	"address": "Sentosa",
+	"website": "https://www.sentosa.com.sg/",
+	"image": "sentosa.jpg",
+	"above": 0.2,
+	"below": 1
+},
+{
+	"title": "Diva to the Death",
+	"time": "2018/03/02 15:00:00",
+	"description": "Enjoy an electric dinner and drama as getai and jazz come to a head in a battle of song and wills. Will the getai Queen Mong Cha Cha overthrow jazz diva Destinee de Souza? Or will Destinee reign supreme over jazz club Monti? Sexy, cool and hilarious, all bets are off with these divas.",
+	"address": "Monti at 1- Pavilion",
+	"website": "http://bitemeproductions.co/",
+	"image": "death.jpg",
+	"above": 0.6,
+	"below": 1
+},
+{
+	"title": "River Hong Bao 2018",
+	"time": "2018/03/24 11:00:00",
+	"description": "Head to one of Singapore’s most scenic waterfronts for an unforgettable Lunar New Year celebration. Located in the heart of Marina Bay, expect non-stop fun with carnival rides, games, performances and nightly fireworks.",
+	"address": "NS Square",
+	"website": "http://www.visitsingapore.com/festivals-events-singapore/annual-highlights/river-hongbao/",
+	"image": "hongbao.jpg",
+	"above": 0.2,
+	"below": 0.8
+},
+{
+	"title": "Chingay Parade Singapore 2018",
+	"time": "2018/03/23 19:00:00",
+	"description": "Get your cameras ready as the largest float parade in Asia is kicking off at the F1 Pit Building. The Chingay parade (which means \"the art of costume and masquerade\" in Hokkien) will be flooding the streets with vibrant floats, lion dances, stilt walkers, wushu masters and international troupes dressed in traditional costumes.",
+	"address": "F1 Pit Building",
+	"website": "http://www.visitsingapore.com/festivals-events-singapore/annual-highlights/chingay-parade-singapore/",
+	"image": "chingay.jpg",
+	"above": 0.1,
+	"below": 0.8
+},
+{
+	"title": "Evita",
+	"time": "2018/03/11 20:00:00",
+	"description": "Featuring hits such as ‘Don’t Cry For Me Argentina’, Andrew Lloyd Webber’s multi-award-winning musical Evita showcases the rise of Eva Peron, the First Lady of Argentina (1946 to 1952). Be inspired by her story at Marina Bay Sands this February.",
+	"address": "Grand Theatre, Mastercard Theatres™ at Marina Bay Sands",
+	"website": "http://www.baseentertainmentasia.com/",
+	"image": "evita.jpg",
+	"above": 0.5,
+	"below": 0.9
+},
+{
+	"title": "Kumar50",
+	"time": "2018/03/28 17:00:00",
+	"description": "Don't miss this side-splitting performance by Singapore's veteran stand-up comedian Kumar as he celebrates turning 50—in style. Brace yourselves for his acerbic wit, fuelled by sardonic observations on Singapore.",
+	"address": "Capitol Theatre",
+	"website": "https://www.sistic.com.sg/",
+	"image": "kumar.jpg",
+	"above": 0.4,
+	"below": 0.9
+}
+]

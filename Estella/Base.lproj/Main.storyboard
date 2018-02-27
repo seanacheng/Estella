@@ -18,17 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-6t-aYd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write New Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-6t-aYd">
                                 <rect key="frame" x="60" y="58.000000000000007" width="294" height="25.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkP-7E-RmD">
-                                <rect key="frame" x="70" y="20" width="274" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Camera"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-ZM-q1y">
                                 <rect key="frame" x="100" y="586" width="214" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -52,30 +47,27 @@
                             <constraint firstItem="zL5-ZM-q1y" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="100" id="IX9-QL-AZj"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="WgI-ZC-UA4" secondAttribute="trailing" constant="30" id="N6f-Oh-pgG"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="zL5-ZM-q1y" secondAttribute="trailing" constant="100" id="Nqt-e8-3Gs"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="DkP-7E-RmD" secondAttribute="trailing" constant="70" id="VNv-X9-Zka"/>
                             <constraint firstItem="zL5-ZM-q1y" firstAttribute="top" secondItem="WgI-ZC-UA4" secondAttribute="bottom" constant="20" id="bcs-A3-KJr"/>
-                            <constraint firstItem="DkP-7E-RmD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="20" id="bh9-99-VWX"/>
                             <constraint firstItem="9Sf-6t-aYd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="38" id="eb8-eR-xse"/>
                             <constraint firstItem="WgI-ZC-UA4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="jaV-HK-vde"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="zL5-ZM-q1y" secondAttribute="bottom" constant="60" id="ur8-Wq-60E"/>
                             <constraint firstItem="WgI-ZC-UA4" firstAttribute="top" secondItem="9Sf-6t-aYd" secondAttribute="bottom" constant="10" id="ux6-XG-RGq"/>
-                            <constraint firstItem="DkP-7E-RmD" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="70" id="vO0-Wr-9rc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Text Entry" image="new entry icon" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Text Entry" image="text entry icon" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="enterText" destination="WgI-ZC-UA4" id="0lQ-CT-25y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-321.19565217391306"/>
+            <point key="canvasLocation" x="-310" y="-390"/>
         </scene>
         <!--Profile-->
         <scene sceneID="lhO-5c-fas">
             <objects>
-                <viewController id="kmr-5R-glb" sceneMemberID="viewController">
+                <viewController id="kmr-5R-glb" customClass="ThirdViewController" customModule="Estella" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0f-qd-uR8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +92,59 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile icon" largeContentSizeImage="third" id="EZf-BL-Zlb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="profilePage" destination="W0f-qd-uR8" id="GFD-2a-NU3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Vi-j3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="1024.7282608695652"/>
+            <point key="canvasLocation" x="748" y="1098"/>
+        </scene>
+        <!--Video Entry-->
+        <scene sceneID="gVb-1Z-rHJ">
+            <objects>
+                <viewController id="lcd-bf-eRk" customClass="FourthViewController" customModule="Estella" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4Z-kY-hbK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-yy-u5d">
+                                <rect key="frame" x="100" y="586" width="214" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="goToDiary:" destination="lcd-bf-eRk" eventType="touchUpInside" id="qu2-ox-vDK"/>
+                                    <action selector="goToDiary:" destination="9pv-A4-QxB" eventType="touchUpInside" id="wdk-XW-F9e"/>
+                                    <action selector="submitPressed:" destination="lcd-bf-eRk" eventType="touchUpInside" id="FKB-GT-lpu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record New Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-6g-Ch2">
+                                <rect key="frame" x="60" y="58.000000000000007" width="294" height="26.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="86a-PR-VTi" firstAttribute="trailing" secondItem="5BM-6g-Ch2" secondAttribute="trailing" constant="60" id="CXg-E1-SSg"/>
+                            <constraint firstItem="86a-PR-VTi" firstAttribute="trailing" secondItem="mMb-yy-u5d" secondAttribute="trailing" constant="100" id="F19-TM-HDb"/>
+                            <constraint firstItem="mMb-yy-u5d" firstAttribute="leading" secondItem="86a-PR-VTi" secondAttribute="leading" constant="100" id="Hf4-1X-ML7"/>
+                            <constraint firstItem="5BM-6g-Ch2" firstAttribute="leading" secondItem="86a-PR-VTi" secondAttribute="leading" constant="60" id="KwW-tK-f8X"/>
+                            <constraint firstItem="5BM-6g-Ch2" firstAttribute="top" secondItem="86a-PR-VTi" secondAttribute="top" constant="38" id="SNM-gQ-Wwl"/>
+                            <constraint firstItem="86a-PR-VTi" firstAttribute="bottom" secondItem="mMb-yy-u5d" secondAttribute="bottom" constant="60" id="gys-8a-w9F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="86a-PR-VTi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video Entry" image="video entry icon" id="AcU-0G-n9x"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fourthPage" destination="g4Z-kY-hbK" id="Wny-tO-NBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuF-IJ-JVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-390"/>
         </scene>
         <!--Diary-->
         <scene sceneID="wg7-f3-ORb">
@@ -120,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749" y="360"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fnD-hh-Nm0">
@@ -150,14 +191,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estella Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-WA-hPw">
+                                <rect key="frame" x="60" y="80" width="294" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="yXI-WA-hPw" firstAttribute="leading" secondItem="Tf7-35-sDi" secondAttribute="leading" constant="60" id="BSP-GI-FNX"/>
                             <constraint firstItem="8dX-Qj-mOl" firstAttribute="leading" secondItem="Tf7-35-sDi" secondAttribute="leading" constant="100" id="Ert-Qs-etZ"/>
                             <constraint firstItem="8dX-Qj-mOl" firstAttribute="top" secondItem="IIN-Q0-3YM" secondAttribute="bottom" constant="10" id="Etx-1t-WEw"/>
                             <constraint firstItem="Tf7-35-sDi" firstAttribute="trailing" secondItem="8dX-Qj-mOl" secondAttribute="trailing" constant="100" id="I2q-Ie-o7J"/>
                             <constraint firstItem="Tf7-35-sDi" firstAttribute="trailing" secondItem="Xuu-ia-zdo" secondAttribute="trailing" constant="90" id="IvL-Nr-bPO"/>
+                            <constraint firstItem="Tf7-35-sDi" firstAttribute="trailing" secondItem="yXI-WA-hPw" secondAttribute="trailing" constant="60" id="OVk-2J-r7G"/>
                             <constraint firstItem="IIN-Q0-3YM" firstAttribute="leading" secondItem="Tf7-35-sDi" secondAttribute="leading" constant="90" id="SIW-UN-3D2"/>
+                            <constraint firstItem="yXI-WA-hPw" firstAttribute="top" secondItem="Tf7-35-sDi" secondAttribute="top" constant="60" id="TLo-pP-ysl"/>
                             <constraint firstItem="IIN-Q0-3YM" firstAttribute="top" secondItem="Xuu-ia-zdo" secondAttribute="bottom" constant="10" id="XZT-z6-XOt"/>
                             <constraint firstItem="Tf7-35-sDi" firstAttribute="trailing" secondItem="IIN-Q0-3YM" secondAttribute="trailing" constant="90" id="m9X-cY-Wp3"/>
                             <constraint firstItem="Xuu-ia-zdo" firstAttribute="leading" secondItem="Tf7-35-sDi" secondAttribute="leading" constant="90" id="rdk-7o-oOv"/>
@@ -168,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3A-M4-cbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1352" y="360"/>
+            <point key="canvasLocation" x="-1352.1739130434785" y="359.51086956521743"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -182,19 +232,21 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="lcd-bf-eRk" kind="relationship" relationship="viewControllers" id="7sZ-Kn-SEV"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="kmr-5R-glb" kind="relationship" relationship="viewControllers" id="akR-fY-Ha1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="360"/>
+            <point key="canvasLocation" x="-310" y="360"/>
         </scene>
     </scenes>
     <resources>
         <image name="diary icon" width="21" height="21"/>
-        <image name="new entry icon" width="21" height="21"/>
         <image name="profile icon" width="21" height="21"/>
+        <image name="text entry icon" width="21" height="21"/>
         <image name="third" width="85" height="85"/>
+        <image name="video entry icon" width="21" height="21"/>
     </resources>
 </document>

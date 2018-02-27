@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-@IBOutlet weak var enterText: UITextView!
+    @IBOutlet weak var enterText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,6 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    
     
     @IBAction func goToDiary(_ sender: Any) {
         
@@ -50,7 +48,7 @@ class FirstViewController: UIViewController {
         }
         task.resume()
         
-        tabBarController?.selectedIndex=1
+        tabBarController?.selectedIndex=2
     }
     
 }

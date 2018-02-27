@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C9D49162045464D003E89B5 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D49152045464D003E89B5 /* FourthViewController.swift */; };
 		3CC4E17020295074004049B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E16F20295074004049B9 /* AppDelegate.swift */; };
 		3CC4E17220295074004049B9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E17120295074004049B9 /* FirstViewController.swift */; };
 		3CC4E17420295074004049B9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E17320295074004049B9 /* SecondViewController.swift */; };
@@ -16,7 +17,6 @@
 		3CC4E19220295074004049B9 /* EstellaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E19120295074004049B9 /* EstellaUITests.swift */; };
 		3CC4E1A020295833004049B9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E19F20295833004049B9 /* ThirdViewController.swift */; };
 		3CED4228203E76C700F11C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CED4227203E76C700F11C2B /* Assets.xcassets */; };
-		3CED422A203EA1E600F11C2B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED4229203EA1E600F11C2B /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C9D49152045464D003E89B5 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		3CC4E16C20295074004049B9 /* Estella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC4E16F20295074004049B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC4E17120295074004049B9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		3CC4E19320295074004049B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC4E19F20295833004049B9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3CED4227203E76C700F11C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CED4229203EA1E600F11C2B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 				3CC4E17120295074004049B9 /* FirstViewController.swift */,
 				3CC4E17320295074004049B9 /* SecondViewController.swift */,
 				3CC4E19F20295833004049B9 /* ThirdViewController.swift */,
-				3CED4229203EA1E600F11C2B /* Camera.swift */,
+				3C9D49152045464D003E89B5 /* FourthViewController.swift */,
 				3CC4E17520295074004049B9 /* Main.storyboard */,
 				3CED4227203E76C700F11C2B /* Assets.xcassets */,
 				3CC4E17A20295074004049B9 /* LaunchScreen.storyboard */,
@@ -268,11 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CED422A203EA1E600F11C2B /* Camera.swift in Sources */,
 				3CC4E17420295074004049B9 /* SecondViewController.swift in Sources */,
 				3CC4E1A020295833004049B9 /* ThirdViewController.swift in Sources */,
 				3CC4E17020295074004049B9 /* AppDelegate.swift in Sources */,
 				3CC4E17220295074004049B9 /* FirstViewController.swift in Sources */,
+				3C9D49162045464D003E89B5 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

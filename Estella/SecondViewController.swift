@@ -15,14 +15,22 @@ class SecondViewController: UIViewController {
         let url = URL(string: "http://10.27.168.4:8891/diary")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-//        request.httpBody = "key=\"value\"".data(using: .utf8)
-//
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//            if error == nil,let usableData = data {
-//                print(usableData) //JSONSerialization
-//            }
-//        }
-//        task.resume()
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(responseString)")
+        }
+        task.resume()
         
     }
     override func didReceiveMemoryWarning() {

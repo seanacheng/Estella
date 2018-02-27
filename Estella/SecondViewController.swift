@@ -29,10 +29,21 @@ class SecondViewController: UIViewController {
             
             let responseString = String(data: data, encoding: .utf8)
             print("responseString = \(responseString)")
+//            for dict in responseString! {
+//                print(dict)
+//            }
         }
         task.resume()
         
+        let diarys = [["author": "zhihao", "type": "text", "score": 0.7, "content": "This is my first diary"], ["author": "zhihao", "type": "video", "score": 0.6, "video": "first.mp4"], ["author": "zhihao", "type": "text", "score": 0.0, "content": "Kjbhkbkbkj"], ["author": "zhihao", "type": "text", "score": 0.20000000298023224, "content": "Get this data"]]
+        for dict in diarys {
+            for (key, value) in dict {
+                print("The '\(key)' is '\(value)'")
+            }
+        }
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

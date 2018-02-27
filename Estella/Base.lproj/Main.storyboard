@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write New Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-6t-aYd">
-                                <rect key="frame" x="60" y="58.000000000000007" width="294" height="25.333333333333336"/>
+                                <rect key="frame" x="60" y="60.000000000000007" width="294" height="25.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WgI-ZC-UA4">
-                                <rect key="frame" x="30" y="93.333333333333343" width="354" height="472.66666666666663"/>
+                                <rect key="frame" x="30" y="95.333333333333343" width="354" height="470.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -42,13 +42,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="9Sf-6t-aYd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="A3w-OK-Ufg"/>
                             <constraint firstItem="9Sf-6t-aYd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="60" id="DzN-V8-Fcz"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="9Sf-6t-aYd" secondAttribute="trailing" constant="60" id="FiF-XP-pCp"/>
                             <constraint firstItem="zL5-ZM-q1y" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="100" id="IX9-QL-AZj"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="WgI-ZC-UA4" secondAttribute="trailing" constant="30" id="N6f-Oh-pgG"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="zL5-ZM-q1y" secondAttribute="trailing" constant="100" id="Nqt-e8-3Gs"/>
                             <constraint firstItem="zL5-ZM-q1y" firstAttribute="top" secondItem="WgI-ZC-UA4" secondAttribute="bottom" constant="20" id="bcs-A3-KJr"/>
-                            <constraint firstItem="9Sf-6t-aYd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="38" id="eb8-eR-xse"/>
                             <constraint firstItem="WgI-ZC-UA4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="jaV-HK-vde"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="zL5-ZM-q1y" secondAttribute="bottom" constant="60" id="ur8-Wq-60E"/>
                             <constraint firstItem="WgI-ZC-UA4" firstAttribute="top" secondItem="9Sf-6t-aYd" secondAttribute="bottom" constant="10" id="ux6-XG-RGq"/>
@@ -68,79 +68,71 @@
         <scene sceneID="lhO-5c-fas">
             <objects>
                 <viewController id="kmr-5R-glb" customClass="ThirdViewController" customModule="Estella" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W0f-qd-uR8">
+                    <view key="view" contentMode="scaleToFill" id="IEw-9A-fPL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-yp-Lfq">
-                                <rect key="frame" x="183" y="607" width="48" height="30"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQD-y8-w8d">
+                                <rect key="frame" x="60" y="591" width="294" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Logout"/>
                                 <connections>
-                                    <segue destination="tXk-9O-EXe" kind="show" id="s4w-li-2RW"/>
+                                    <segue destination="tXk-9O-EXe" kind="show" id="uqs-7V-tJ1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="T4z-zj-C6y" firstAttribute="bottom" secondItem="t6Q-yp-Lfq" secondAttribute="bottom" constant="50" id="Io5-Z3-SGo"/>
-                            <constraint firstItem="t6Q-yp-Lfq" firstAttribute="centerX" secondItem="W0f-qd-uR8" secondAttribute="centerX" id="oM0-Wd-qNU"/>
+                            <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="EQD-y8-w8d" secondAttribute="trailing" constant="60" id="1wS-bp-kra"/>
+                            <constraint firstItem="SAu-Ql-of1" firstAttribute="bottom" secondItem="EQD-y8-w8d" secondAttribute="bottom" constant="60" id="CuH-W3-vdz"/>
+                            <constraint firstItem="EQD-y8-w8d" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="60" id="dly-FE-gB7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="T4z-zj-C6y"/>
+                        <viewLayoutGuide key="safeArea" id="SAu-Ql-of1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile icon" largeContentSizeImage="third" id="EZf-BL-Zlb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="profilePage" destination="W0f-qd-uR8" id="GFD-2a-NU3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Vi-j3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="1098"/>
+            <point key="canvasLocation" x="747.82608695652175" y="1097.2826086956522"/>
         </scene>
         <!--Video Entry-->
         <scene sceneID="gVb-1Z-rHJ">
             <objects>
                 <viewController id="lcd-bf-eRk" customClass="FourthViewController" customModule="Estella" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g4Z-kY-hbK">
+                    <view key="view" contentMode="scaleToFill" id="HpU-EO-jtA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-yy-u5d">
-                                <rect key="frame" x="100" y="586" width="214" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="goToDiary:" destination="lcd-bf-eRk" eventType="touchUpInside" id="qu2-ox-vDK"/>
-                                    <action selector="goToDiary:" destination="9pv-A4-QxB" eventType="touchUpInside" id="wdk-XW-F9e"/>
-                                    <action selector="submitPressed:" destination="lcd-bf-eRk" eventType="touchUpInside" id="FKB-GT-lpu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record New Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-6g-Ch2">
-                                <rect key="frame" x="60" y="58.000000000000007" width="294" height="26.333333333333336"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write New Entry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wo-V8-0qg">
+                                <rect key="frame" x="60" y="60.000000000000007" width="294" height="25.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWP-5L-yiT">
+                                <rect key="frame" x="100" y="586" width="214" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="goToDiary:" destination="9pv-A4-QxB" eventType="touchUpInside" id="QBJ-96-2R9"/>
+                                    <action selector="goToDiary:" destination="lcd-bf-eRk" eventType="touchUpInside" id="jSi-EW-kfn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="86a-PR-VTi" firstAttribute="trailing" secondItem="5BM-6g-Ch2" secondAttribute="trailing" constant="60" id="CXg-E1-SSg"/>
-                            <constraint firstItem="86a-PR-VTi" firstAttribute="trailing" secondItem="mMb-yy-u5d" secondAttribute="trailing" constant="100" id="F19-TM-HDb"/>
-                            <constraint firstItem="mMb-yy-u5d" firstAttribute="leading" secondItem="86a-PR-VTi" secondAttribute="leading" constant="100" id="Hf4-1X-ML7"/>
-                            <constraint firstItem="5BM-6g-Ch2" firstAttribute="leading" secondItem="86a-PR-VTi" secondAttribute="leading" constant="60" id="KwW-tK-f8X"/>
-                            <constraint firstItem="5BM-6g-Ch2" firstAttribute="top" secondItem="86a-PR-VTi" secondAttribute="top" constant="38" id="SNM-gQ-Wwl"/>
-                            <constraint firstItem="86a-PR-VTi" firstAttribute="bottom" secondItem="mMb-yy-u5d" secondAttribute="bottom" constant="60" id="gys-8a-w9F"/>
+                            <constraint firstItem="0Wo-V8-0qg" firstAttribute="top" secondItem="wht-B4-URH" secondAttribute="top" constant="40" id="4vx-fb-yt8"/>
+                            <constraint firstItem="wht-B4-URH" firstAttribute="trailing" secondItem="cWP-5L-yiT" secondAttribute="trailing" constant="100" id="6JF-ZB-B9S"/>
+                            <constraint firstItem="cWP-5L-yiT" firstAttribute="leading" secondItem="wht-B4-URH" secondAttribute="leading" constant="100" id="Jst-3c-JMW"/>
+                            <constraint firstItem="0Wo-V8-0qg" firstAttribute="leading" secondItem="wht-B4-URH" secondAttribute="leading" constant="60" id="TdL-kk-d9j"/>
+                            <constraint firstItem="wht-B4-URH" firstAttribute="bottom" secondItem="cWP-5L-yiT" secondAttribute="bottom" constant="60" id="idd-JL-ZPh"/>
+                            <constraint firstItem="wht-B4-URH" firstAttribute="trailing" secondItem="0Wo-V8-0qg" secondAttribute="trailing" constant="60" id="kQH-VA-9HP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="86a-PR-VTi"/>
+                        <viewLayoutGuide key="safeArea" id="wht-B4-URH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Video Entry" image="video entry icon" id="AcU-0G-n9x"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="fourthPage" destination="g4Z-kY-hbK" id="Wny-tO-NBB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BuF-IJ-JVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

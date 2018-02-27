@@ -20,9 +20,8 @@ class FourthViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func goToDiary(_ sender: Any) {
         tabBarController?.selectedIndex=2
     }
-    
 }

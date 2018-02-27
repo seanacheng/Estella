@@ -27,6 +27,7 @@ class MainHandler(tornado.web.RequestHandler):
 class DiaryHandler(tornado.web.RequestHandler):
 	def post(self):
 		content = self.get_argument("content", "", True)
+
 		
 		document = types.Document(
 			content=content,
@@ -36,7 +37,17 @@ class DiaryHandler(tornado.web.RequestHandler):
 		result = {}
 		result['content'] = content
 		result['score'] = annotations.document_sentiment.magnitude
+		diarys = json.load(open('diary.json'))
+		diarys.append({'content': content, 'type': 'text', 'author': 'zhihao', 'score': result['score']})
+		with open('diary.json', 'w') as f:
+			f.write(json.dump(diarys))
 		self.finish(result)
+
+	def get(self):
+		diarys = json.load(open('diary.json'))
+		result = {'diarys': diarys}
+		self.finish(result)
+
 
 class EventHandler(tornado.web.RequestHandler):
 	def get(self):

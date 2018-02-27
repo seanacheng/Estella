@@ -1,0 +1,14 @@
+[
+{
+	"content": "This is my first diary",
+	"score": 0.7,
+	"author": "zhihao",
+	"type": "text"
+},
+{
+	"video": "first.mp4",
+	"score": 0.6,
+	"author": "zhihao",
+	"type": "video"
+}
+]

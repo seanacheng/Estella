@@ -39,8 +39,10 @@ class DiaryHandler(tornado.web.RequestHandler):
 		result['score'] = annotations.document_sentiment.magnitude
 		diarys = json.load(open('diary.json'))
 		diarys.append({'content': content, 'type': 'text', 'author': 'zhihao', 'score': result['score']})
+		
+		print(diarys)
 		with open('diary.json', 'w') as f:
-			f.write(json.dump(diarys))
+			f.write(json.dumps(diarys))
 		self.finish(result)
 
 	def get(self):

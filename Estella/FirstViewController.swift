@@ -15,10 +15,6 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let entry: String = enterText.text!
-        let url = URL(string: "http://10.27.168.4:8891/diary")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +26,31 @@ class FirstViewController: UIViewController {
     
     
     @IBAction func goToDiary(_ sender: Any) {
-        tabBarController?.selectedIndex=1
         
+        let entry: String = enterText.text!
+        let url = URL(string: "http://10.27.168.4:8891/diary")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        let postString = "content=" + entry
+        request.httpBody = postString.data(using: .utf8)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(responseString)")
+        }
+        task.resume()
+        
+        tabBarController?.selectedIndex=1
     }
     
 }

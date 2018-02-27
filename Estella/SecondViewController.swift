@@ -11,7 +11,6 @@ import UIKit
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
-        sup/Users/zhihao.sun/Desktop/Estella/Estella/SecondViewController.swifter.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

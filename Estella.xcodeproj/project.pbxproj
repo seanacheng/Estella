@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C9D49162045464D003E89B5 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D49152045464D003E89B5 /* FourthViewController.swift */; };
 		3C9D491C204591EE003E89B5 /* dolphins.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3C9D491B204591EE003E89B5 /* dolphins.mov */; };
+		3C9D491E204820E7003E89B5 /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D491D204820E7003E89B5 /* UITextViewPlaceholder.swift */; };
 		3CC4E17020295074004049B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E16F20295074004049B9 /* AppDelegate.swift */; };
 		3CC4E17220295074004049B9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E17120295074004049B9 /* FirstViewController.swift */; };
 		3CC4E17420295074004049B9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E17320295074004049B9 /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3C9D49152045464D003E89B5 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		3C9D491B204591EE003E89B5 /* dolphins.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = dolphins.mov; sourceTree = "<group>"; };
+		3C9D491D204820E7003E89B5 /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 		3CC4E16C20295074004049B9 /* Estella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC4E16F20295074004049B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC4E17120295074004049B9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				3CC4E17320295074004049B9 /* SecondViewController.swift */,
 				3CC4E19F20295833004049B9 /* ThirdViewController.swift */,
 				3C9D49152045464D003E89B5 /* FourthViewController.swift */,
+				3C9D491D204820E7003E89B5 /* UITextViewPlaceholder.swift */,
 				3CC4E17520295074004049B9 /* Main.storyboard */,
 				3CED4227203E76C700F11C2B /* Assets.xcassets */,
 				3CC4E17A20295074004049B9 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				3CC4E17420295074004049B9 /* SecondViewController.swift in Sources */,
 				3CC4E1A020295833004049B9 /* ThirdViewController.swift in Sources */,
 				3CC4E17020295074004049B9 /* AppDelegate.swift in Sources */,
+				3C9D491E204820E7003E89B5 /* UITextViewPlaceholder.swift in Sources */,
 				3CC4E17220295074004049B9 /* FirstViewController.swift in Sources */,
 				3C9D49162045464D003E89B5 /* FourthViewController.swift in Sources */,
 			);

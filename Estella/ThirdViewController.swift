@@ -10,31 +10,64 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
+    @IBOutlet weak var eventsView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "http://10.27.168.4:8891/event")!
+        
+        let screenWidth = eventsView.bounds.width
+        
+        let url = URL(string: "http://10.27.2.249:8891/event")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {                                                 // check for fundamental networking error
-                print("error=\(String(describing: error))")
-                return
+        URLSession.shared.dataTask(with:url) { (data, response, error) in
+            if error != nil {
+                print(error as Any)
+            } else {
+                do {
+                    let parsedData = try JSONSerialization.jsonObject(with: data!) as! [String:Any]
+                    let events = parsedData["events"] as! [AnyObject]
+                    var startY = 10
+                    let labelHeight = 50        // enough space for content and score
+                    var contentHeight = 0
+                    for event in events {
+                        let label = UILabel()
+                        var labelHeightOffset = 0
+                        label.textAlignment = .left
+                        label.lineBreakMode = .byWordWrapping
+                        label.numberOfLines = 100;
+                        label.text = ""
+                        for (key, value) in event as! Dictionary<String, AnyObject> {
+                            switch "\(key)" {
+                            case "time":
+                                label.text = label.text! + "\(value) \n"
+                            case "title":
+                                label.text = label.text! + "\(value) \n"
+                            case "description":
+                                label.text = label.text! + "\(value) \n"
+                                labelHeightOffset += "\(value)".count/2 - "\(value)".count%2        // adds enough space to fit the content
+                            case "website":
+                                label.text = label.text! + "\(value) \n"        // would like to move this piece above score
+                            default:
+                                continue
+                            }
+                            //                print("The \(key) is: \(value).")
+                        }
+                        //            print("-------------------------")
+                        label.frame = CGRect(x: 10, y: startY, width: Int(screenWidth)-20, height: labelHeight + labelHeightOffset)
+                        contentHeight += labelHeightOffset + 70
+                        self.eventsView.addSubview(label)
+                        startY += 70 + labelHeightOffset
+                    }
+                    self.eventsView.contentSize = CGSize(width: Int(screenWidth), height: contentHeight)
+                    self.view.addSubview(self.eventsView)
+                } catch let error as NSError {
+                    print(error)
+                }
             }
             
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(String(describing: response))")
-            }
-            
-            let responseString = String(data: data, encoding: .utf8)
-            print("responseString = \(String(describing: responseString))")
-//            var arrayString = "\(String(describing: responseString))".replacingOccurrences(of: "{", with: "[")
-//            arrayString = "\(String(describing: responseString))".replacingOccurrences(of: "}", with: "]")
-//            let diaries = Array(arrayString["events"])
-            
-        }
-        task.resume()
+            }.resume()
     }
     
 

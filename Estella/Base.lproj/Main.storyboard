@@ -92,23 +92,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3Rm-Zm-mvY">
+                                <rect key="frame" x="50" y="238.66666666666666" width="314" height="322.33333333333337"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="EQD-y8-w8d" secondAttribute="trailing" constant="60" id="1wS-bp-kra"/>
                             <constraint firstItem="pfc-1g-Mvz" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="20" id="CXJ-q6-37C"/>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="bottom" secondItem="EQD-y8-w8d" secondAttribute="bottom" constant="60" id="CuH-W3-vdz"/>
+                            <constraint firstItem="3Rm-Zm-mvY" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="50" id="Ex0-qy-aH5"/>
+                            <constraint firstItem="EQD-y8-w8d" firstAttribute="top" secondItem="3Rm-Zm-mvY" secondAttribute="bottom" constant="30" id="Txl-f7-VzM"/>
                             <constraint firstItem="u6P-gT-mog" firstAttribute="top" secondItem="SAu-Ql-of1" secondAttribute="top" constant="30" id="YWe-Rs-vMJ"/>
                             <constraint firstItem="pfc-1g-Mvz" firstAttribute="top" secondItem="u6P-gT-mog" secondAttribute="bottom" constant="30" id="ZRu-cb-YIk"/>
+                            <constraint firstItem="3Rm-Zm-mvY" firstAttribute="top" secondItem="pfc-1g-Mvz" secondAttribute="bottom" constant="30" id="cBv-MN-U2t"/>
                             <constraint firstItem="EQD-y8-w8d" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="60" id="dly-FE-gB7"/>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="pfc-1g-Mvz" secondAttribute="trailing" constant="20" id="kZ8-8G-e8V"/>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="u6P-gT-mog" secondAttribute="trailing" constant="100" id="kox-jR-a4H"/>
                             <constraint firstItem="u6P-gT-mog" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="100" id="nAz-9M-ZTA"/>
+                            <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="3Rm-Zm-mvY" secondAttribute="trailing" constant="50" id="uc8-nl-MNe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SAu-Ql-of1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile icon" largeContentSizeImage="third" id="EZf-BL-Zlb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="eventsView" destination="3Rm-Zm-mvY" id="wmm-31-wzi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Vi-j3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -29,9 +29,10 @@ class ThirdViewController: UIViewController {
             
             let responseString = String(data: data, encoding: .utf8)
             print("responseString = \(String(describing: responseString))")
-            //            for dict in responseString! {
-            //                print(dict)
-            //            }
+//            var arrayString = "\(String(describing: responseString))".replacingOccurrences(of: "{", with: "[")
+//            arrayString = "\(String(describing: responseString))".replacingOccurrences(of: "}", with: "]")
+//            let diaries = Array(arrayString["events"])
+            
         }
         task.resume()
     }

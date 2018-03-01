@@ -80,12 +80,30 @@
                                     <segue destination="tXk-9O-EXe" kind="show" id="uqs-7V-tJ1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anonymous" translatesAutoresizingMaskIntoConstraints="NO" id="u6P-gT-mog">
+                                <rect key="frame" x="100" y="50" width="214" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XQm-qc-ZGn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended Events" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-1g-Mvz">
+                                <rect key="frame" x="20" y="180" width="374" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="EQD-y8-w8d" secondAttribute="trailing" constant="60" id="1wS-bp-kra"/>
+                            <constraint firstItem="pfc-1g-Mvz" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="20" id="CXJ-q6-37C"/>
                             <constraint firstItem="SAu-Ql-of1" firstAttribute="bottom" secondItem="EQD-y8-w8d" secondAttribute="bottom" constant="60" id="CuH-W3-vdz"/>
+                            <constraint firstItem="u6P-gT-mog" firstAttribute="top" secondItem="SAu-Ql-of1" secondAttribute="top" constant="30" id="YWe-Rs-vMJ"/>
+                            <constraint firstItem="pfc-1g-Mvz" firstAttribute="top" secondItem="u6P-gT-mog" secondAttribute="bottom" constant="30" id="ZRu-cb-YIk"/>
                             <constraint firstItem="EQD-y8-w8d" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="60" id="dly-FE-gB7"/>
+                            <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="pfc-1g-Mvz" secondAttribute="trailing" constant="20" id="kZ8-8G-e8V"/>
+                            <constraint firstItem="SAu-Ql-of1" firstAttribute="trailing" secondItem="u6P-gT-mog" secondAttribute="trailing" constant="100" id="kox-jR-a4H"/>
+                            <constraint firstItem="u6P-gT-mog" firstAttribute="leading" secondItem="SAu-Ql-of1" secondAttribute="leading" constant="100" id="nAz-9M-ZTA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SAu-Ql-of1"/>
                     </view>
@@ -235,6 +253,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="anonymous" width="61" height="61"/>
         <image name="diary icon" width="21" height="21"/>
         <image name="profile icon" width="21" height="21"/>
         <image name="text entry icon" width="21" height="21"/>

@@ -52,9 +52,7 @@ class ThirdViewController: UIViewController {
                             default:
                                 continue
                             }
-                            //                print("The \(key) is: \(value).")
                         }
-                        //            print("-------------------------")
                         label.frame = CGRect(x: 10, y: startY, width: Int(screenWidth)-20, height: labelHeight + labelHeightOffset)
                         contentHeight += labelHeightOffset + 70
                         self.eventsView.addSubview(label)
@@ -70,12 +68,11 @@ class ThirdViewController: UIViewController {
             }.resume()
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 }
 
 
